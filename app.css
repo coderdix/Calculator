@@ -1,0 +1,107 @@
+html, body {
+	height: 100vh;
+}
+
+body {
+	background-image: 
+		radial-gradient(
+			circle farthest-corner at top left,
+			#4D4D4D,
+			#373737 20%
+		);
+}
+
+.screen {
+	min-height: 150px;
+	text-align: center;
+}
+
+#display {
+	line-height: 150px;
+	height: 100%;
+	width: 100%;
+	font-size: 5em;
+	color: deepskyblue;
+}
+
+#log {
+	height: 50px;
+	font-size: 1em;
+	color: #999;
+}
+
+#buttons > .row > div {
+	width: 100%;
+}
+
+.button {
+	width: 20%;
+	float: left;
+	text-align: center;
+	padding: 4% 0px;
+	color: #999;
+	font-size: 20px;
+}
+
+@media (max-width : 480px) {.button{width: 33%}}
+
+.button:hover, button:hover {
+	background-color: rgba(133, 158, 158, 0.2);
+	color: deepskyblue;
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+}
+
+button:focus {
+	outline: none;
+	border: 1px solid;
+}
+
+#clear {
+	color: deepskyblue;
+}
+
+.operands .button {
+	color: #fff;
+}
+
+#equals {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding: 1em 0;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+#equals:focus {
+	outline: none;
+	border: none;
+}
+
+#equals:hover {
+	background: transparent;
+}
+
+span.solve {
+	border: 1px solid transparent;
+	border-radius: 50%;
+	padding: 15px 23px 15px;
+	background-color: deepskyblue;
+	transition: background-color 0.5s ease;
+	float: none;
+	color: #fff;
+}
+
+span.solve:hover {
+	background-color: black;
+}
+
+.clear {
+	clear: both;
+}
